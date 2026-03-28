@@ -9,7 +9,7 @@ langchain-community
 langchain-core
 
 # ─── RAG / Vector Store ─────────────────────────────────
-faiss-cpu==1.8.0
+faiss-cpu==1.12.0
 sentence-transformers==3.0.0
 tiktoken==0.7.0
 
@@ -28,6 +28,9 @@ numpy==1.26.4
 rich==13.7.1                   # Pretty terminal output
 loguru==0.7.2                  # Logging
 tenacity==8.3.0                # Retry logic
+tf-keras
+transformers
+
 
 # ─── API & Web ──────────────────────────────────────────
 httpx==0.27.0
