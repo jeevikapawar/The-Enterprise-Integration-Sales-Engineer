@@ -11,7 +11,7 @@ langchain-core
 # ─── RAG / Vector Store ─────────────────────────────────
 faiss-cpu==1.12.0
 sentence-transformers==3.0.0
-tiktoken==0.7.0
+tiktoken== 0.9.0
 
 # ─── Document Handling ──────────────────────────────────
 pypdf==4.2.0
@@ -22,7 +22,7 @@ jinja2==3.1.4                  # Document templating
 
 # ─── Data & Utils ───────────────────────────────────────
 python-dotenv==1.0.1
-pydantic==2.7.1
+pydantic==2.11.1
 pandas>=2.2.2
 numpy==1.26.4
 rich==13.7.1                   # Pretty terminal output
