@@ -80,7 +80,7 @@ def main():
             "Example: python main.py "
             "--transcript transcripts/example_transcript.txt"
         )
-        sys.exit(1)
+        return
 
     if not Path(args.transcript).exists():
         logger.error(f"Transcript file not found: {args.transcript}")
@@ -97,3 +97,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+else:
+    # Running under Streamlit - do nothing, let app.py handle it
+    pass
