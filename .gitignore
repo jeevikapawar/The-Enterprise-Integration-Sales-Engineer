@@ -1,0 +1,29 @@
+# ─── Virtual Environment ────────────────────────────────
+.venv/
+venv/
+env/
+
+# ─── Real Secrets — NEVER commit ────────────────────────
+.env
+
+# ─── Python Cache ───────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ─── Generated Files ────────────────────────────────────
+data/faiss_index/
+logs/
+output/
+
+# ─── VS Code Settings ───────────────────────────────────
+.vscode/
+
+# ─── OS Files ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Pytest ─────────────────────────────────────────────
+.pytest_cache/

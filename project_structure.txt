@@ -1,0 +1,41 @@
+enterprise-integration-sales-agent/
+│
+├── main.py                    # Entry point
+├── requirements.txt           # Python dependencies
+├── .env.example               # Environment variable template
+├── README.md                  # This file
+│
+├── agent/
+│   ├── extractor.py           # Pain point & stack extraction logic
+│   ├── architect.py           # Architecture reasoning (Claude)
+│   ├── document_generator.py  # Solution Design Doc builder
+│   └── orchestrator.py        # Main agent loop
+│
+├── rag/
+│   ├── embedder.py            # Document embedding pipeline
+│   ├── retriever.py           # Semantic search & retrieval
+│   └── indexer.py             # Case study indexing script
+│
+├── scripts/
+│   ├── index_case_studies.py  # One-time indexing script
+│   └── test_rag.py            # RAG retrieval testing
+│
+├── data/
+│   └── case_studies/          # Internal EAI case study library
+│       ├── CS-001.json
+│       └── CS-002.json
+│
+├── transcripts/               # Input meeting transcripts
+│   └── example_transcript.txt
+│
+├── output/                    # Generated solution documents
+│   └── example_output.md
+│
+├── prompts/
+│   ├── extraction_prompt.txt  # Claude extraction prompt template
+│   └── architecture_prompt.txt # Claude architecture reasoning prompt
+│
+└── tests/
+    ├── test_extractor.py
+    ├── test_rag.py
+    └── test_document_generator.py

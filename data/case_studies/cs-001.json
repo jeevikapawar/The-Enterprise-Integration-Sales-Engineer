@@ -1,0 +1,44 @@
+{
+  "id": "CS-001",
+  "title": "Legacy ERP to Cloud Migration for RetailCo",
+  "industry": "Retail",
+  "company_size": "500-1000 employees",
+  "pain_points": [
+    "Siloed data between ERP and CRM",
+    "Manual CSV exports for reporting",
+    "No real-time inventory visibility",
+    "Legacy on-premise SAP system"
+  ],
+  "tech_stack": {
+    "before": ["SAP ECC", "Salesforce CRM", "Excel", "FTP transfers"],
+    "after": ["SAP S/4HANA", "Salesforce", "MuleSoft Anypoint", "Azure Data Lake"]
+  },
+  "solution_summary": "Implemented API-led connectivity using MuleSoft to bridge SAP and Salesforce. Created a real-time data sync pipeline with event-driven triggers. Migrated batch FTP processes to REST API calls with error handling and retry logic.",
+  "architecture_pattern": "API-led connectivity with event-driven triggers",
+  "outcomes": [
+    "65% reduction in manual data entry",
+    "Real-time inventory sync across 50 stores",
+    "Reporting time reduced from 2 days to 15 minutes",
+    "99.9% uptime on integration layer"
+  ],
+  "timeline": "4 months",
+  "technologies_used": [
+    "MuleSoft",
+    "SAP S/4HANA",
+    "Salesforce",
+    "Azure",
+    "REST APIs"
+  ],
+  "tags": [
+    "ERP",
+    "CRM",
+    "API",
+    "retail",
+    "migration",
+    "real-time",
+    "MuleSoft",
+    "Salesforce",
+    "Oracle",
+    "data sync"
+  ]
+}

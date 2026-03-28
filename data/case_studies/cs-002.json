@@ -1,0 +1,50 @@
+{
+  "id": "CS-002",
+  "title": "Salesforce and Oracle Real-Time Sync for TechManufacture",
+  "industry": "Manufacturing",
+  "company_size": "300-600 employees",
+  "pain_points": [
+    "Salesforce CRM and Oracle ERP not connected",
+    "Sales team manually re-entering orders into Oracle",
+    "Broken Python scripts causing data loss",
+    "Power BI dashboards running on stale weekly data",
+    "No audit trail for compliance"
+  ],
+  "tech_stack": {
+    "before": ["Salesforce", "Oracle ERP", "Python scripts", "Power BI", "Slack"],
+    "after": ["Salesforce", "Oracle ERP", "MuleSoft", "Power BI", "Azure Service Bus"]
+  },
+  "solution_summary": "Replaced fragile Python scripts with a robust MuleSoft integration layer connecting Salesforce and Oracle ERP in real time. Implemented Azure Service Bus for reliable message queuing. Power BI connected directly to live data streams. Full audit logging added for compliance.",
+  "architecture_pattern": "Event-driven messaging with API-led connectivity",
+  "outcomes": [
+    "Zero manual order re-entry for sales team",
+    "Power BI dashboards now update every 5 minutes",
+    "Full audit trail implemented for compliance",
+    "System uptime improved from 87% to 99.8%",
+    "3 hours per day saved across operations team"
+  ],
+  "timeline": "3 months",
+  "technologies_used": [
+    "MuleSoft",
+    "Salesforce",
+    "Oracle ERP",
+    "Azure Service Bus",
+    "Power BI",
+    "REST APIs"
+  ],
+  "tags": [
+    "Salesforce",
+    "Oracle",
+    "ERP",
+    "CRM",
+    "real-time",
+    "Power BI",
+    "manufacturing",
+    "audit",
+    "compliance",
+    "MuleSoft",
+    "Python",
+    "automation",
+    "data sync"
+  ]
+}

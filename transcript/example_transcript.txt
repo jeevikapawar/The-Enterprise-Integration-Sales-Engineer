@@ -1,0 +1,75 @@
+[Discovery Call Transcript - TechFlow Inc.]
+[Date: January 15, 2025 | Duration: 15 minutes]
+[Attendees: Sarah (EAI Systems - Sales), Mike (Client - Head of IT), Jenny (Client - Operations Manager)]
+
+Sarah: Thanks for joining today Mike, Jenny. Really appreciate your time. 
+Can you start by walking us through what's going on with your current setup?
+
+Mike: Sure. So we're running Salesforce for our CRM and we have an older 
+on-premise Oracle database that handles all our inventory and order management. 
+The core problem is they don't talk to each other at all.
+
+Jenny: It's honestly a nightmare. Every time a sales rep closes a deal in 
+Salesforce, someone on my team has to manually log into Oracle and re-enter 
+that entire order by hand. We're a team of about 300 people and this is 
+eating up roughly 3 hours a day across the operations team.
+
+Sarah: How long has this been going on?
+
+Mike: About 3 years now. We tried to patch it with some Python scripts our 
+intern wrote but they break constantly. Last month we lost about 15 orders 
+because the script silently failed and nobody noticed for two days.
+
+Jenny: We also use Slack for internal communications and we recently brought 
+on HubSpot for marketing, but those are completely siloed from everything else 
+too. It's just a mess.
+
+Sarah: What about reporting? How are you handling that currently?
+
+Jenny: We moved to Power BI about six months ago which was great, but we're 
+still manually pulling data exports from Oracle every Monday morning and 
+uploading them. So every decision I make Monday through Friday is based on 
+last week's data. That's a serious problem when we're trying to manage 
+inventory in real time.
+
+Mike: And it only gets worse. We have a compliance audit coming up in Q2 
+and our auditors are already asking about our data transfer processes. 
+Right now we have zero audit trail. Everything is manual and undocumented.
+
+Sarah: That sounds really stressful. What does success look like for you 
+at the end of this engagement?
+
+Mike: At minimum, I want Salesforce and Oracle talking to each other 
+automatically. No manual entry. When a deal closes in Salesforce it should 
+reflect in Oracle within minutes not days.
+
+Jenny: For me it's the Power BI piece. I need real-time or near real-time 
+dashboards. I should not be making operational decisions on week-old data. 
+And honestly the audit trail issue keeps me up at night. We need everything 
+logged and documented.
+
+Mike: The compliance piece is non-negotiable for us. Whatever solution you 
+propose has to have proper logging and be auditable. Our Q2 audit is in 
+about 4 months so timeline is tight.
+
+Sarah: Understood. Budget wise, what are you working with?
+
+Mike: We have flexibility if the ROI is clear. We are thinking somewhere 
+in the range of \$50,000 to \$80,000 for the integration work itself. We 
+cannot go much beyond that without board approval which takes time we 
+do not have.
+
+Jenny: And one more thing. Whatever we do cannot disrupt our current 
+operations. We process about 200 orders a day. We cannot have downtime 
+during the migration.
+
+Sarah: That is completely reasonable and something we have handled before. 
+We have done very similar projects. Let me take everything back to our 
+architecture team and we will put together a full solution design document 
+for you within the week.
+
+Mike: Perfect. Looking forward to seeing what you come up with. 
+
+Jenny: Same here. Thanks Sarah.
+
+Sarah: Thank you both. Talk soon.

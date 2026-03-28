@@ -1,0 +1,44 @@
+{
+  "id": "CS-003",
+  "title": "Healthcare Data Pipeline Modernization",
+  "industry": "Healthcare",
+  "company_size": "200-500 employees",
+  "pain_points": [
+    "Patient data scattered across 5 different systems",
+    "HIPAA compliance concerns with data transfers",
+    "Manual reconciliation taking 20 hours per week",
+    "No single source of truth for patient records"
+  ],
+  "tech_stack": {
+    "before": ["Epic EHR", "Custom MySQL DB", "Excel", "Email transfers"],
+    "after": ["Epic EHR", "Azure FHIR API", "Logic Apps", "Power BI"]
+  },
+  "solution_summary": "Built a HIPAA-compliant integration layer using Azure Logic Apps and FHIR API standards. Automated patient data reconciliation and created a unified dashboard in Power BI for real-time reporting.",
+  "architecture_pattern": "Event-driven with FHIR API standards",
+  "outcomes": [
+    "100% HIPAA compliance achieved",
+    "20 hours per week saved on manual reconciliation",
+    "Single source of truth established across all departments",
+    "Real-time patient data visibility across all departments"
+  ],
+  "timeline": "3 months",
+  "technologies_used": [
+    "Azure Logic Apps",
+    "FHIR API",
+    "Epic EHR",
+    "Power BI",
+    "Azure",
+    "MySQL"
+  ],
+  "tags": [
+    "healthcare",
+    "HIPAA",
+    "EHR",
+    "data pipeline",
+    "Azure",
+    "compliance",
+    "Power BI",
+    "reporting",
+    "automation"
+  ]
+}
