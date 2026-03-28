@@ -17,8 +17,7 @@ st.set_page_config(
 # ── Header ───────────────────────────────────────────────────
 st.title("🤖 EAI Systems — Enterprise Integration Agent")
 st.markdown(
-    "**Upload a meeting transcript and get a full "
-    "Solution Design Document in seconds!**"
+    "**Enterprise Integration Agent by Jeevika Pawar**"
 )
 st.divider()
 
