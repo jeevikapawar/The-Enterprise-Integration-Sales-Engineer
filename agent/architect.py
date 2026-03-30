@@ -6,7 +6,7 @@ from loguru import logger
 from dotenv import load_dotenv
 import google.generativeai as genai
 from config import config
-
+from agent.utils import safe_generate
 # Force load env variables
 load_dotenv()
 
@@ -59,7 +59,7 @@ Similarity Score: {case_study.get('similarity_score', 0):.2%}
             .replace("{case_study}", case_study_text)
 
         response = self.model.generate_content(prompt)
-        architecture_md = response.text
+        architecture_md = safe_generate(self.model, prompt)
 
         logger.success("✅ Architecture design complete!")
         return architecture_md

@@ -7,7 +7,7 @@ from loguru import logger
 from dotenv import load_dotenv
 import google.generativeai as genai
 from config import config
-
+from agent.utils import safe_generate
 # Force load env variables
 load_dotenv()
 
@@ -38,7 +38,7 @@ class TranscriptExtractor:
         prompt = self.prompt_template.replace("{transcript}", transcript)
 
         response = self.model.generate_content(prompt)
-        raw_output = response.text
+        raw_output = safe_generate(self.model, prompt)
 
         logger.debug(f"Raw Gemini response:\n{raw_output}")
         extracted = self._parse_json_response(raw_output)
