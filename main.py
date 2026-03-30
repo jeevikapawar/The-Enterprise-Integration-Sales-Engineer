@@ -5,8 +5,16 @@ import sys
 from pathlib import Path
 from loguru import logger
 from config import config
+import subprocess
 
+# Auto-build FAISS index if not found
+from config import config
+index_file = Path(config.faiss_index_path) / "case_studies.index"
 
+if not index_file.exists():
+    print("⏳ FAISS index not found. Building it now...")
+    subprocess.run(["python", "scripts/index_case_studies.py"], check=True)
+    print("✅ FAISS index built!")
 def setup_logging():
     logger.remove()
     logger.add(

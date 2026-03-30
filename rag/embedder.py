@@ -60,7 +60,7 @@ class CaseStudyEmbedder:
 
         dimension = embeddings.shape[1]
         self.index = faiss.IndexFlatIP(dimension)
-        self.index.add(embeddings)
+        self.index.add(embeddings) #type:ignore
 
         self.index_path.mkdir(parents=True, exist_ok=True)
         faiss.write_index(
